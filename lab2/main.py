@@ -72,9 +72,7 @@ stemmed_words_ru = [stemmer_ru.stem(word) for word in words_ru]
 print("Stemming for Russian words: ", stemmed_words_ru)
 
 # Лемматизация с помощью spaCy
-raw = """DENNIS: Listen, strange women lying in ponds distributing swords
-is no basis for a system of government.  Supreme executive power derives from
-a mandate from the masses, not from some farcical aquatic ceremony."""
+raw = """DENNIS: Listen, bizarre women lying in ponds and handing out swords is not a valid foundation for a system of governance. True executive power comes from a mandate given by the people, not from some ridiculous aquatic ritual."""
 
 nlp = spacy.load("en_core_web_sm")
 doc = nlp(raw)
